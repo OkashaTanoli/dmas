@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-header-check
 'use client'
 
 import React, { useEffect, useState } from 'react';
@@ -58,12 +58,12 @@ function Header() {
                     <div className='flex gap-5 items-center lg:hidden'>
                         <div className='flex gap-3 items-center'>
                             <HiOutlineMail size={16} className='text-medium-gray' />
-                            <p className='text-sm text-zinc-600 font-semibold'>abcdef12345@gmail.com</p>
+                            <p className='text-sm text-zinc-600 font-semibold'>m786pkus@dmas.pk</p>
                         </div>
                         <div className='w-[2px] h-5 bg-zinc-600'></div>
                         <div className='flex gap-3 items-center'>
                             <MdOutlineCall size={16} className='text-medium-gray' />
-                            <p className='text-sm text-zinc-600 font-semibold'>+923333333333, +923333333333</p>
+                            <p className='text-sm text-zinc-600 font-semibold'>+923368351269, +923352235929</p>
                         </div>
                     </div>
                     <div className='flex gap-3 items-center text-zinc-600 lg:hidden'>

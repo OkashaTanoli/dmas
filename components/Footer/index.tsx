@@ -11,8 +11,8 @@ function Footer() {
                     <Image src={Logo} alt='logo' className='mix-blend-darken' />
                     <div className='mt-5'>
                         <p className='text-sm text-dark-pirple leading-loose'>Location : <span className='text-medium-gray'>Pakistan</span></p>
-                        <p className='text-sm text-dark-pirple leading-loose'>Phone : <span className='text-medium-gray'>+92 1234 5678</span></p>
-                        <p className='text-sm text-dark-pirple leading-loose'>Email : <span className='text-medium-gray'>contact@website.com</span></p>
+                        <p className='text-sm text-dark-pirple leading-loose'>Phone : <span className='text-medium-gray'>+92 300 230 2648</span></p>
+                        <p className='text-sm text-dark-pirple leading-loose'>Email : <span className='text-medium-gray'>info@dmas.pk</span></p>
                     </div>
                     <div className='flex gap-3 mt-5'>
                         <div className='w-9 h-9 flex justify-center items-center rounded-md bg-[#1977F2]'><FaFacebookF size={20} className='text-white' /></div>
@@ -50,7 +50,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <p className='w-[1100px] xl-lg:w-[90%] m-auto text-sm text-medium-gray text-center pb-5'>© <span className='text-dark-pirple'>DMAS</span> All Rights Reserved by <span className='text-cyan'>Digitech Infra Associates</span></p>
+            <p className='w-[1100px] xl-lg:w-[90%] m-auto text-sm text-medium-gray text-center pb-5'>© <span className='text-dark-pirple'>DMAS</span> All Rights Reserved by <span className='text-cyan'>SayPak DMAS Innovation (Pvt.) Ltd.</span></p>
         </div>
     );
 }

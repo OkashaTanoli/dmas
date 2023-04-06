@@ -32,14 +32,17 @@ function About() {
                 <div className='w-[1100px] xl-lg:w-[90%] m-auto flex lg-md:flex-col gap-10'>
                     <div className='w-1/2 lg-md:w-full'>
                         <h1 className='text-3xl font-bold text-zinc-700'>About US</h1>
-                        <p className='text-sm font-semibold leading-loose text-zinc-600 mt-5 indent-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Vitae pariatur, odit labore, facilis rem culpa vero, libero earum
-                            laudantium quisquam minus nam quae? Quis nihil pariatur soluta
-                            inventore ducimus perspiciatis?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quas corrupti vel aut consequuntur, sunt id mollitia dolorem dicta
-                            necessitatibus impedit, voluptates pariatur fugit inventore nam et.
-                            Quia laudantium eaque rem?
+                        <p className='text-sm font-semibold leading-loose text-zinc-600 mt-5 indent-4'>
+                            <ul class="ulList">
+
+                                <li>Provide education and information on Mental Health</li>
+                                <li>Offer participants information and other resources they need to understand the causes,symptoms and possible treatments options of a disorder.</li>
+                                <li>Therapeutic interaction with focus on development of skills</li>
+                                <li>Empowering participants to identify daily emotions and unhelpful thoughts.</li>
+                                <li>Identifying support safety networks.</li>
+                                <li>Natural coping mechanisms on demands of everyday life.</li>
+
+                            </ul>
                         </p>
                     </div>
                     <div className='w-1/2 lg-md:w-full grid grid-cols-2 sm:grid-cols-1 gap-7'>

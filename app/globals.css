@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 .flex_important {
     display: flex !important;
 }
@@ -35,7 +33,6 @@
     background: linear-gradient(90deg, #00BDFF 0.84%, #6233E7 75.07%)
 }
 
-
 #google_translate_element select {
     background: #efe0fb;
     color: #4a4a4a;
@@ -56,7 +53,8 @@
     display: none !important;
 }
 
-#goog-gt-tt, .goog-te-balloon-frame {
+#goog-gt-tt,
+.goog-te-balloon-frame {
     display: none !important;
 }
 
@@ -77,10 +75,18 @@
     transform: rotateY(10deg);
 }
 
-
 .custom-img {
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
     height: unset !important;
-  }
+}
+
+.my-button {
+    background-color: cyan;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
