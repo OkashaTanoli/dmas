@@ -1,4 +1,5 @@
 // @ts-header-check
+
 'use client'
 
 import React, { useEffect, useState } from 'react';
@@ -49,7 +50,7 @@ function Header() {
                         <Link href={'/work'}><li className='cursor-pointer'>Our Work</li></Link>
                         <li className='cursor-pointer'>Add Member</li>
                         <Link href={'/donate'}><li className='cursor-pointer'>Donate</li></Link>
-                        <li className='cursor-pointer'>Contact</li>
+                        <Link href={'/contact'}><li className='cursor-pointer'>Contact</li></Link>
                     </ul>
                 </div>
             </div>
@@ -87,7 +88,7 @@ function Header() {
                         <Link href={'/work'}><li className='cursor-pointer'>Our Work</li></Link>
                         <li className='cursor-pointer'>Add Member</li>
                         <Link href={'/donate'}><li className='cursor-pointer'>Donate</li></Link>
-                        <li className='cursor-pointer'>Contact</li>
+                        <Link href={'/contact'}><li className='cursor-pointer'>Contact</li></Link>
                     </ul>
                     <div className='flex gap-5 items-center'>
                         <button className='text-xs xs:hidden font-semibold bg-dark-blue text-white py-3 px-7'>Get Started</button>

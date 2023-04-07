@@ -32,8 +32,8 @@ function About() {
                 <div className='w-[1100px] xl-lg:w-[90%] m-auto flex lg-md:flex-col gap-10'>
                     <div className='w-1/2 lg-md:w-full'>
                         <h1 className='text-3xl font-bold text-zinc-700'>About US</h1>
-                        <p className='text-sm font-semibold leading-loose text-zinc-600 mt-5 indent-4'>
-                            <ul class="ulList">
+                        {/* <p className='text-sm font-semibold leading-loose text-zinc-600 mt-5 indent-4'> */}
+                            <ul className="ulList list-disc text-sm font-semibold leading-loose text-zinc-600 mt-5">
 
                                 <li>Provide education and information on Mental Health</li>
                                 <li>Offer participants information and other resources they need to understand the causes,symptoms and possible treatments options of a disorder.</li>
@@ -43,7 +43,7 @@ function About() {
                                 <li>Natural coping mechanisms on demands of everyday life.</li>
 
                             </ul>
-                        </p>
+                        {/* </p> */}
                     </div>
                     <div className='w-1/2 lg-md:w-full grid grid-cols-2 sm:grid-cols-1 gap-7'>
                         {
