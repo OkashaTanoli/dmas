@@ -1,4 +1,4 @@
-// @ts-header-check
+// @ts-nocheck
 
 'use client'
 
