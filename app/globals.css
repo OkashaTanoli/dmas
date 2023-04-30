@@ -90,3 +90,11 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.outline-title {
+    color: #f5cca9;
+    -webkit-text-stroke: 2px #e18950;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }

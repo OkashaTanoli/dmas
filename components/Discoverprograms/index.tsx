@@ -13,23 +13,27 @@ function DiscoverPrograms() {
         title: string;
         text: string;
         img: StaticImageData;
+        link: string
     }
 
     let data: IData[] = [
         {
             title: 'Facebook blueprint certification',
             text: 'Break into a new field like information technology or data science No prior experience necessary',
-            img: Course1
+            img: Course1,
+            link: 'https://blog.hootsuite.com/facebook-blueprint/'
         },
         {
             title: 'Start dropshipping  today',
             text: 'With dropshipping apps, products ship directly from the supplier to your customer',
-            img: Course2
+            img: Course2,
+            link: 'https://www.shopify.com/blog/dropshipping-guide'
         },
         {
             title: 'Google Ads certified Professional',
             text: 'Break into a new field like information technology or data science No prior experience necessary',
-            img: Course3
+            img: Course3,
+            link: 'https://support.google.com/google-ads/answer/9702955?hl=en'
         },
     ]
     return (
@@ -48,7 +52,7 @@ function DiscoverPrograms() {
                                             {val.title}
                                         </div>
                                         <p className='text-sm text-medium-gray mt-7'>{val.text}</p>
-                                        <button className='py-3 px-5 text-dark-pirple text-xs mt-3 font-bold bg-light-gray flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button>
+                                        <a href={val.link} target='_blank'><button className='py-3 px-5 text-dark-pirple text-xs mt-3 font-bold bg-light-gray flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></a>
                                     </div>
                                 </div>
                             )

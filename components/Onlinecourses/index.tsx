@@ -46,7 +46,7 @@ function OnlineCourses() {
                         </div>
                         <div className='mt-3'>
                             <h1 className='text-xl text-dark-pirple font-bold text-center'>Learn the essential skills</h1>
-                            <p className='text-sm text-medium-gray leading-loose mt-2 text-center'>Break into a new field like format technology or data science.</p>
+                            <p className='text-sm text-medium-gray leading-loose mt-2 text-center'>This hybrid training programme teaches Digital Marketing Architecture System Programme from scratch. Experts instruct the hands-on DMAS programme. Learn in-depth information about automated marketing, social media, email, affiliate marketing, and SEO/SEM.</p>
                         </div>
                     </div>
                     <div className='p-7 bg-white flex flex-col items-center light_shadow z-10 mt-20 xs:mt-5'>
@@ -55,7 +55,7 @@ function OnlineCourses() {
                         </div>
                         <div className='mt-3'>
                             <h1 className='text-xl text-dark-pirple font-bold text-center'>Learn in your own place</h1>
-                            <p className='text-sm text-medium-gray leading-loose mt-2 text-center'>Break into a new field like format technology or data science.</p>
+                            <p className='text-sm text-medium-gray leading-loose mt-2 text-center'>Home study delivers numerous advantages considering it&#39;s a relaxing, stress-free setting. It might be challenging to study at home for a few reasons, including the numerous temptations that make it simple to put off starting and make it simple to get sidetracked once you do.</p>
                         </div>
                     </div>
                 </div>

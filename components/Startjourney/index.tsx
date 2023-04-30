@@ -20,7 +20,7 @@ function StartJourney() {
                                 <Image src={Icon1} alt='icon1' className='w-7' />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h1 className='text-lg font-bold flex-shrink-0'>56,892</h1>
+                                <h1 className='text-lg font-bold flex-shrink-0'>3,876</h1>
                                 <h1 className='text-sm text-medium-gray'>Student enrolled</h1>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function StartJourney() {
                                 <Image src={Icon2} alt='icon1' className='w-7' />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h1 className='text-lg font-bold flex-shrink-0'>24,053</h1>
+                                <h1 className='text-lg font-bold flex-shrink-0'>22</h1>
                                 <h1 className='text-sm text-medium-gray'>Classes completed</h1>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ function StartJourney() {
                                 <Image src={Icon4} alt='icon1' className='w-6' />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h1 className='text-lg font-bold flex-shrink-0'>3,098</h1>
+                                <h1 className='text-lg font-bold flex-shrink-0'>9</h1>
                                 <h1 className='text-sm text-medium-gray'>Top instructors</h1>
                             </div>
                         </div>
