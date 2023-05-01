@@ -81,7 +81,7 @@ function Header() {
             </div>
             <div className='sticky top-0 left-0 w-full z-30 bg-white shadow-md'>
                 <div className='w-[1300px] xl:w-[90%] sm:w-[95%] h-[70px] sm:h-[55px] m-auto flex items-center justify-between'>
-                    <Image src={Logo} alt='logo' className='w-36 sm:w-32' />
+                    <Link href={'/'}><Image src={Logo} alt='logo' className='w-36 sm:w-32' /></Link>
                     <ul className='flex header:hidden gap-7 text-sm font-bold text-dark-pirple'>
                         <li className='cursor-pointer'>Home</li>
                         <Link href={'/about'}><li className='cursor-pointer'>About</li></Link>
