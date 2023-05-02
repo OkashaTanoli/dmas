@@ -48,7 +48,7 @@ function Header() {
                         <Link href={'/about'}><li className='cursor-pointer'>About</li></Link>
                         <Link href={'/gallery'}><li className='cursor-pointer'>Gallery</li></Link>
                         <Link href={'/work'}><li className='cursor-pointer'>Our Work</li></Link>
-                        <li className='cursor-pointer'>Add Member</li>
+                        <Link href={'/addmember'}><li className='cursor-pointer'>Add Member</li></Link>
                         <Link href={'/donate'}><li className='cursor-pointer'>Donate</li></Link>
                         <Link href={'/team'}><li className='cursor-pointer'>Team</li></Link>
                         <Link href={'/contact'}><li className='cursor-pointer'>Contact</li></Link>
@@ -87,7 +87,7 @@ function Header() {
                         <Link href={'/about'}><li className='cursor-pointer'>About</li></Link>
                         <Link href={'/gallery'}><li className='cursor-pointer'>Gallery</li></Link>
                         <Link href={'/work'}><li className='cursor-pointer'>Our Work</li></Link>
-                        <li className='cursor-pointer'>Add Member</li>
+                        <Link href={'/addmember'}><li className='cursor-pointer'>Add Member</li></Link>
                         <Link href={'/donate'}><li className='cursor-pointer'>Donate</li></Link>
                         <Link href={'/team'}><li className='cursor-pointer'>Team</li></Link>
                         <Link href={'/contact'}><li className='cursor-pointer'>Contact</li></Link>
