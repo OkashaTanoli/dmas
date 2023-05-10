@@ -13,6 +13,7 @@ import ImprovingLives from "./Improvinglives";
 import Subscribe from "./Subscribe";
 import Footer from "./Footer";
 import PageHeading from "./PageHeading";
+import Loader from "./Loader";
 
 export {
     Header,
@@ -29,5 +30,6 @@ export {
     ImprovingLives,
     Subscribe,
     Footer,
-    PageHeading
+    PageHeading,
+    Loader
 }
