@@ -3,6 +3,7 @@ import React from 'react';
 import Instructor from '@/public/images/instructor.png'
 import InstructorSub from '@/public/images/instructor-sub.png'
 import UnderLine from '@/public/images/underline.png'
+import Link from 'next/link';
 
 function BecomeInstructor() {
     return (
@@ -20,7 +21,7 @@ function BecomeInstructor() {
                         <Image src={UnderLine} alt='underline' className='w-24 sm:hidden md:w-20 absolute bottom-[30%] md:-bottom-5 -right-10 md:right-10' />
                     </div>
                     <div className='flex md:justify-center'>
-                        <button className='py-3 px-7 bg-dark-blue text-sm font-semibold text-white mt-7 md:m-auto'>Start Teaching Today</button>
+                        <Link href={'/register'}><button className='py-3 px-7 bg-dark-blue text-sm font-semibold text-white mt-7 md:m-auto'>Start Teaching Today</button></Link>
                     </div>
                 </div>
             </div>

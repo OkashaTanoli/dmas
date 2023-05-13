@@ -5,6 +5,7 @@ import Skill2 from '@/public/images/skill2.png'
 import Skill3 from '@/public/images/skill3.png'
 import Skill4 from '@/public/images/skill4.png'
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 
 interface IData {
@@ -73,7 +74,7 @@ function EnhanceSkills() {
                         })
                     }
                 </div>
-                <p className='w-[70%] m-auto mt-10 text-center text-sm text-medium-gray'>Career & we will guide you through that. <span className='text-cyan font-semibold'>Register Free Now!</span></p>
+                <p className='w-[70%] m-auto mt-10 text-center text-sm text-medium-gray'>Career & we will guide you through that. <Link href={'/addmember'} className='text-cyan font-semibold'>Register Free Now!</Link></p>
             </div>
         </div>
     );

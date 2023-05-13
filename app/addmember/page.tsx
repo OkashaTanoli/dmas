@@ -2,14 +2,21 @@
 
 import { Loader, PageHeading } from '@/components';
 import React, { ChangeEvent, FormEvent, useState } from 'react';
+import { app } from '@/utils/firebase';
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import Image from 'next/image';
+
+
 
 function AddMember() {
     const [data, setData] = useState({
         name: '',
         number: '',
-        work: ''
+        work: '',
+        image: ''
     })
     const [loading, setLoading] = useState(false)
+    const [uploadingImage, setUploadingImage] = useState(false)
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
 
@@ -20,12 +27,47 @@ function AddMember() {
         })
     }
 
+    const handleImageChange = async (e: any) => {
+        const file = e.target.files[0]
+        console.log(file)
+        if (!file) {
+            return
+        }
+        if (file.type !== 'image/jpeg' && file.type !== 'image/png') {
+            return alert("Select Only PNG, JPEG or JPG")
+        }
+        setUploadingImage(true)
+        const storage = getStorage(app);
+        const storageRef = ref(storage, `images/${Date.now().toString()}_${file.name}`);
+        const uploadTask = uploadBytesResumable(storageRef, file);
+
+        uploadTask.on('state_changed',
+            (snapshot) => { },
+            (error) => {
+                alert(error)
+            },
+            () => {
+                getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+                    setData({
+                        ...data,
+                        image: downloadURL
+                    })
+                    setUploadingImage(false)
+                });
+            }
+        );
+
+    }
+
+
+    let notEmpty = data.name && data.number && data.work && data.image
+
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
         setLoading(true)
         fetch('/api/addmember', {
             method: 'POST',
-            body: JSON.stringify({ name: data.name, number: data.number, work: data.work })
+            body: JSON.stringify({ name: data.name, number: data.number, work: data.work, image: data.image })
         })
             .then((res) => res.json())
             .then((data) => {
@@ -61,7 +103,22 @@ function AddMember() {
                         <input onChange={handleDataChange} required type="text" name='number' placeholder='Enter Your Number' className='py-2 px-5 text-sm text-zinc-800 border border-zinc-300 w-full rounded-lg bg-zinc-50' id="" />
                         <h1 className='text-xl text-zinc-800 font-bold mt-5'>What Your Work</h1>
                         <textarea onChange={handleDataChange} required name='work' className='resize-none py-2 px-5 text-sm text-zinc-800 border border-zinc-300 w-full rounded-lg bg-zinc-50' rows={3}></textarea>
-                        <button className='text-white w-full mt-3 bg-green-500 font-bold flex justify-center items-center h-[40px]'>{loading ? <Loader width='w-4' height='h-4' /> : 'Submit'}</button>
+                        <div className='my-5'>
+                            <label htmlFor="image" className='m-auto w-full h-[80px] border border-dashed border-zinc-300 flex justify-center items-center text-zinc-800 text-center text-lg font-extrabold'>{uploadingImage ? <Loader width='w-4' height='h-4' /> : 'Upload Image'}</label>
+                            <input type="file" onChange={handleImageChange} disabled={uploadingImage} hidden name="image" id="image" />
+                        </div>
+                        {
+                            data.image &&
+                            <div className='h-[130px] my-3 flex justify-center items-center'>
+                                <Image src={data.image} alt='image' className='h-full w-auto' width={700} height={700} />
+                            </div>
+                        }
+                        {
+                            notEmpty ? 
+                            <button className='text-white w-full mt-3 bg-green-500 font-bold flex justify-center items-center h-[40px]'>{loading ? <Loader width='w-4' height='h-4' /> : 'Submit'}</button>
+                            :
+                            <button type='button' className='text-white w-full cursor-not-allowed mt-3 bg-gray-500 font-bold flex justify-center items-center h-[40px]'>Submit</button>
+                        }
                     </form>
                     {
                         success &&

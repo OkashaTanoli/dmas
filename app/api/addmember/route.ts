@@ -7,8 +7,8 @@ export async function POST(request: Request) {
     const body = await request.json()
     const id = uuidv4();
     try {
-        const res = await sql`INSERT INTO member (id, name, number, work)
-        VALUES (${id}, ${body.name}, ${body.number}, ${body.work});`
+        const res = await sql`INSERT INTO member (id, name, number, work, image)
+        VALUES (${id}, ${body.name}, ${body.number}, ${body.work}, ${body.image});`
         return NextResponse.json({ message: "done", status: true })
     }
     catch (err) {

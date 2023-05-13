@@ -26,6 +26,8 @@ function Donate() {
         })
     }
 
+    let notEmpty = data.name && data.number && data.email && data.donation
+
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
         setLoading(true)
@@ -89,7 +91,12 @@ function Donate() {
                             </div>
                             <input onChange={handleDataChange} type="number" name='donation' required placeholder='Donation Total' className='flex-grow border-y-2 border-r-2 px-5 focus:outline-none bg-light-gray-2' />
                         </div>
-                        <button type='submit' className='h-[50px] text-white tracking-wide bg-dark-blue'>{loading ? <Loader width='w-4' height='h-4' /> : 'DONATE NOW'}</button>
+                        {
+                            notEmpty ?
+                                <button type='submit' className='h-[50px] text-white tracking-wide bg-dark-blue'>{loading ? <Loader width='w-4' height='h-4' /> : 'DONATE NOW'}</button>
+                                :
+                                <button type='button' className='h-[50px] cursor-not-allowed text-white tracking-wide bg-gray-500'>DONATE NOW</button>
+                        }
                     </form>
                     {
                         success &&

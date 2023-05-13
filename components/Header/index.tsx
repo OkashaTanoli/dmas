@@ -93,7 +93,7 @@ function Header() {
                         <Link href={'/contact'}><li className='cursor-pointer'>Contact</li></Link>
                     </ul>
                     <div className='flex gap-5 items-center'>
-                        <button className='text-xs xs:hidden font-semibold bg-dark-blue text-white py-3 px-7'>Get Started</button>
+                        <Link href={'/register'}><button className='text-xs xs:hidden font-semibold bg-dark-blue text-white py-3 px-7'>Get Started</button></Link>
                         <div className='w-8 h-8 relative flex justify-center items-center border border-dark-blue rounded-full'>
                             <BsBasket2Fill className='text-dark-blue' size={18} />
                             <div className=' w-4 h-4 flex justify-center items-center bg-[#F95265] text-white text-xs font-semibold absolute -bottom-1 -right-1 rounded-full'>2</div>
