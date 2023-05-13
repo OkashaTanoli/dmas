@@ -216,7 +216,7 @@ function Register() {
                         <div className='grid grid-cols-2 gap-5 xs:block mt-7 xs:mt-0'>
                             <div className='flex flex-col gap-2 xs:mt-7'>
                                 <label htmlFor="birthDate" className='text-zinc-500 font-semibold'>Birth Date</label>
-                                <input type="text" name='birthDate' onChange={(e) => setData({ ...data, dob: e.target.value })} id='birthDate' className='w-full py-3 px-5 bg-transparent border border-zinc-300 rounded-md text-sm text-zinc-800 focus:outline-none' />
+                                <input type="date" name='birthDate' max={new Date().toISOString().split('T')[0]} onChange={(e) => setData({ ...data, dob: e.target.value })} id='birthDate' className='w-full py-3 px-5 bg-transparent border border-zinc-300 rounded-md text-sm text-zinc-800 focus:outline-none' />
                             </div>
                             <div className='flex flex-col gap-2 xs:mt-7'>
                                 <label htmlFor="email" className='text-zinc-500 font-semibold'>Email Address  <span className='text-base text-red-600 ml-2'>*</span></label>

@@ -6,6 +6,7 @@ import Plant from '@/public/images/plant.png'
 import { HiOutlineArrowSmRight } from 'react-icons/hi'
 import Image, { StaticImageData } from 'next/image';
 import Heading from '../Heading';
+import Link from 'next/link';
 
 function DiscoverPrograms() {
 
@@ -59,7 +60,7 @@ function DiscoverPrograms() {
                         })
                     }
                 </div>
-                <p className='text-medium-gray text-sm w-[60%] text-center m-auto mt-10'>Enjoy the top notch learning methods and achieve next level skills! You are the creator of your own career & we will guide you through that. <span className='text-cyan font-semibold'>Register Free Now!</span></p>
+                <p className='text-medium-gray text-sm w-[60%] text-center m-auto mt-10'>Enjoy the top notch learning methods and achieve next level skills! You are the creator of your own career & we will guide you through that. <Link href={'/addmember'} className='text-cyan font-semibold'>Register Free Now!</Link></p>
             </div>
         </div>
     );

@@ -21,7 +21,7 @@ function Marketing() {
                             <hr />
                             <p className='text-medium-gray text-sm leading-loose mt-5'>DMAS&apos;s program is an excellent stepping stone for uneducated people looking to broaden and deepen their knowledge of digital marketing.</p>
                         </div>
-                        <Link href={'/addmember'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
+                        <Link href={'/register'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
                     </div>
                     <div className='bg-white p-5 min-h-[450px] sm:min-h-0 flex flex-col'>
                         <div className='flex-grow'>
@@ -31,7 +31,7 @@ function Marketing() {
                             <hr />
                             <p className='text-medium-gray text-sm leading-loose mt-5'>This hybrid certification program covers advanced digital marketing concepts in a broad range of industries and provides hands-on learning to facilitate learners in developing the skills necessary to thrive in today&apos;s changing marketplace.</p>
                         </div>
-                        <Link href={'/addmember'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
+                        <Link href={'/register'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
                     </div>
                     <div className='bg-white p-5 min-h-[450px] sm:min-h-0 flex flex-col'>
                         <div className='flex-grow'>
@@ -47,7 +47,7 @@ function Marketing() {
                                 <li>Get your next start-up through digital marketing technology.</li>
                             </ul>
                         </div>
-                        <Link href={'/addmember'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
+                        <Link href={'/register'}><button className='py-6 px-5 text-dark-pirple text-xs mt-3 font-bold flex items-center gap-1'>Start Now <HiOutlineArrowSmRight size={18} /></button></Link>
                     </div>
                 </div>
             </div>
